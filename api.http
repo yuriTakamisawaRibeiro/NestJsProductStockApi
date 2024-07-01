@@ -1,0 +1,43 @@
+###
+GET http://localhost:3000/products
+
+
+###
+GET http://localhost:3000/products/3
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Feijão",
+    "price": 5.99
+}
+
+###
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+
+    "price":6.00
+}
+
+
+###
+DELETE http://localhost:3000/products/2
+
+
+###
+POST http://localhost:3000/stock-inputs
+Content-Type: application/json
+
+{
+    "product_id": 3,
+    "quantity":10,
+    "date":"2022-01-01T00:00:00Z"
+}
+
+
+###
+GET http://localhost:3000/stock-inputs/1
